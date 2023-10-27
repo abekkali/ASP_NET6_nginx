@@ -2,14 +2,14 @@
 # -----------sdk----------------
 sudo apt-get update && \
 sudo apt-get install -y dotnet-sdk-6.0
-#--------------nginx--------------
+# --------------nginx--------------
 Installation de Nginx:
 
 
 sudo apt-get update
 sudo apt-get install nginx
 
-#Configuration de Nginx pour HTTPS avec un certificat auto-signé (pour le développement / test):
+# Configuration de Nginx pour HTTPS avec un certificat auto-signé (pour le développement / test):
 Si vous n'avez pas de certificat SSL et que vous voulez juste tester, vous pouvez créer un certificat auto-signé :
 
 sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/selfsigned.key -out /etc/ssl/certs/selfsigned.crt
